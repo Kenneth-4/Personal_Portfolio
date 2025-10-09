@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Waves from "@/components/Waves";
+import DecryptedText from "@/components/DecryptedText";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -64,7 +65,32 @@ export default function RootLayout({
               </div>
             </div>
           </header>
-          {children}
+          <main className="pt-28">
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+              <div className="min-h-[calc(100dvh-8rem)] grid place-items-center text-center">
+                <div className="space-y-4">
+                  <DecryptedText
+                    text="KENNETH CUBIAN"
+                    className="select-none font-extrabold tracking-tight leading-[0.9] text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] text-black dark:text-white drop-shadow-[0_1px_0_rgba(0,0,0,0.04)]"
+                    speedMs={24}
+                  />
+                  <div className="mt-4 sm:mt-6 text-black/70 dark:text-white/80">
+                    <DecryptedText
+                      text="Software Developer | Aspiring Engineer"
+                      className="block font-semibold tracking-tight text-[4.5vw] sm:text-[3.6vw] md:text-[3vw] lg:text-[2.4vw]"
+                      speedMs={30}
+                    />
+                    <DecryptedText
+                      text="React • Next.js • UI/UX"
+                      className="block font-medium tracking-tight text-[3.8vw] sm:text-[3vw] md:text-[2.4vw] lg:text-[2vw]"
+                      speedMs={34}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {children}
+          </main>
         </div>
       </body>
     </html>
