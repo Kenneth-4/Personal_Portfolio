@@ -130,7 +130,7 @@ export default function RootLayout({
               <section id="techstack" className="py-24 sm:py-28 md:py-32">
                 <ScrollReveal className="mb-10">
                   <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
-                    TechStack
+                    My TechStack
                   </h2>
                 </ScrollReveal>
                 {/* Frameworks */}
@@ -141,40 +141,51 @@ export default function RootLayout({
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {/* React */}
                     <ScrollReveal>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10 text-sky-500 dark:text-sky-400" viewBox="0 0 256 256" fill="none" stroke="currentColor" strokeWidth="12">
-                          <circle cx="128" cy="128" r="14" fill="currentColor"/>
-                          <ellipse cx="128" cy="128" rx="80" ry="32"/>
-                          <ellipse cx="128" cy="128" rx="80" ry="32" transform="rotate(60 128 128)"/>
-                          <ellipse cx="128" cy="128" rx="80" ry="32" transform="rotate(-60 128 128)"/>
-                        </svg>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">React</span>
                       </div>
                     </ScrollReveal>
                     {/* Next.js */}
                     <ScrollReveal delayMs={60}>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <img src="/next.svg" alt="Next.js" className="w-10 h-10 dark:invert" />
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-12 h-12 dark:invert" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">Next.js</span>
                       </div>
                     </ScrollReveal>
                     {/* Tailwind CSS */}
                     <ScrollReveal delayMs={120}>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10 text-teal-500 dark:text-teal-400" viewBox="0 0 48 48" fill="currentColor" aria-hidden>
-                          <path d="M24 14c-5.333 0-8.667 2.667-10 8 2-2.667 4.333-3.667 7-3 1.556.389 2.667 1.5 3.889 2.722C26.333 23.333 28 25 32 25c5.333 0 8.667-2.667 10-8-2 2.667-4.333 3.667-7 3-1.556-.389-2.667-1.5-3.889-2.722C29.667 15.667 28 14 24 14Zm-10 10c-5.333 0-8.667 2.667-10 8 2-2.667 4.333-3.667 7-3 1.556.389 2.667 1.5 3.889 2.722C16.333 33.333 18 35 22 35c5.333 0 8.667-2.667 10-8-2 2.667-4.333 3.667-7 3-1.556-.389-2.667-1.5-3.889-2.722C19.667 25.667 18 24 14 24Z"/>
-                        </svg>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-12 h-12" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">Tailwind CSS</span>
                       </div>
                     </ScrollReveal>
                     {/* Express */}
                     <ScrollReveal delayMs={180}>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10 text-black dark:text-white" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3">
-                          <circle cx="24" cy="32" r="10"/>
-                          <path d="M40 22l14 20M54 22L40 42"/>
-                        </svg>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className="w-12 h-12 dark:invert" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">Express</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* Django */}
+                    <ScrollReveal delayMs={240}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Django</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* Laravel */}
+                    <ScrollReveal delayMs={300}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Laravel</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* React Native */}
+                    <ScrollReveal delayMs={360}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg" alt="React Native" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">React Native</span>
                       </div>
                     </ScrollReveal>
                   </div>
@@ -188,22 +199,37 @@ export default function RootLayout({
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {/* TypeScript */}
                     <ScrollReveal>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10" viewBox="0 0 48 48" fill="currentColor" aria-hidden>
-                          <rect x="6" y="6" width="36" height="36" rx="6" className="fill-blue-600 dark:fill-blue-500"/>
-                          <path d="M17 21h14v3h-5v11h-4V24h-5v-3Z" className="fill-white"/>
-                        </svg>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-12 h-12" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">TypeScript</span>
                       </div>
                     </ScrollReveal>
                     {/* JavaScript */}
                     <ScrollReveal delayMs={60}>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10" viewBox="0 0 48 48" fill="currentColor" aria-hidden>
-                          <rect x="6" y="6" width="36" height="36" rx="6" className="fill-yellow-400"/>
-                          <path d="M20 18h4v14c0 4-3 6-6 6-1.9 0-3.7-.7-5-2l2-3c.8.8 1.7 1 2.7 1 1.6 0 2.3-1 2.3-2.3V18Zm10 0h9v4h-5v2h5v10h-9v-4h5v-2h-5V18Z" className="fill-black"/>
-                        </svg>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-12 h-12" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">JavaScript</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* Python */}
+                    <ScrollReveal delayMs={120}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Python</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* Java */}
+                    <ScrollReveal delayMs={180}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Java</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* PHP */}
+                    <ScrollReveal delayMs={240}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">PHP</span>
                       </div>
                     </ScrollReveal>
                   </div>
@@ -217,22 +243,30 @@ export default function RootLayout({
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {/* PostgreSQL */}
                     <ScrollReveal>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10 text-sky-600 dark:text-sky-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                          <ellipse cx="12" cy="6" rx="7" ry="3"/>
-                          <path d="M5 6v6c0 1.657 3.134 3 7 3s7-1.343 7-3V6"/>
-                          <path d="M5 12v6c0 1.657 3.134 3 7 3s7-1.343 7-3v-6"/>
-                        </svg>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-12 h-12" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">PostgreSQL</span>
                       </div>
                     </ScrollReveal>
-                    {/* Prisma (ORM) */}
+                    {/* MySQL */}
                     <ScrollReveal delayMs={60}>
-                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur p-5 flex flex-col items-center justify-center gap-3 shadow-sm">
-                        <svg className="w-10 h-10 text-cyan-600 dark:text-cyan-500" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M4 16.5 12.5 2.5a1 1 0 0 1 1.7.1l5.9 11.8a1 1 0 0 1-.5 1.4l-9.8 4.5a1 1 0 0 1-1.3-.5L4 16.5Z"/>
-                        </svg>
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Prisma</span>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">MySQL</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* Firebase */}
+                    <ScrollReveal delayMs={120}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Firebase</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* Supabase */}
+                    <ScrollReveal delayMs={180}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Supabase</span>
                       </div>
                     </ScrollReveal>
                   </div>
