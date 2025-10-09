@@ -222,9 +222,14 @@ const Waves = ({
       ctx.beginPath();
       // Allow theme-driven color via CSS when lineColor is 'currentColor'
       const useCurrent = configRef.current.lineColor === 'currentColor';
-      ctx.strokeStyle = useCurrent
-        ? getComputedStyle(containerRef.current).color
-        : configRef.current.lineColor;
+      if (useCurrent) {
+        const containerEl = containerRef.current;
+        ctx.strokeStyle = containerEl && containerEl instanceof Element
+          ? getComputedStyle(containerEl).color
+          : 'black';
+      } else {
+        ctx.strokeStyle = configRef.current.lineColor;
+      }
       linesRef.current.forEach(points => {
         let p1 = moved(points[0], false);
         ctx.moveTo(p1.x, p1.y);

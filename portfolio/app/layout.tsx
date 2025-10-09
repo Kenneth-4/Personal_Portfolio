@@ -3,6 +3,7 @@ import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Waves from "@/components/Waves";
 import DecryptedText from "@/components/DecryptedText";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -30,17 +31,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="relative min-h-dvh">
-          {/* Background Waves */}
-          <div className="pointer-events-none fixed inset-0 -z-10 text-black/10 dark:text-white">
-            <Waves
-              lineColor="currentColor"
-              backgroundColor="transparent"
-              className=""
-            />
-          </div>
+          <div className="relative min-h-dvh">
           {/* Header */}
-          <header className="fixed top-0 inset-x-0 z-40">
+            <header className="fixed top-0 inset-x-0 z-50">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
               <div className="mt-6 rounded-full border border-black/10 dark:border-white/15 bg-white/70 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:dark:bg-black/35 shadow-sm">
                 <div className="flex items-center justify-between px-6 py-3">
@@ -49,8 +42,9 @@ export default function RootLayout({
                     <span>Kenneth</span>
                   </a>
                   <nav className="hidden md:flex items-center gap-8 text-base font-bold text-black/70 dark:text-white/80">
-                    <a href="#about" className="hover:text-black dark:hover:text-white transition-colors">About</a>
+                    <a href="#techstack" className="hover:text-black dark:hover:text-white transition-colors">TechStack</a>
                     <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
+                    <a href="#resume" className="hover:text-black dark:hover:text-white transition-colors">Resume</a>
                     <a href="#contact" className="hover:text-black dark:hover:text-white transition-colors">Contact</a>
                   </nav>
                   <div className="flex items-center gap-2">
@@ -65,31 +59,101 @@ export default function RootLayout({
               </div>
             </div>
           </header>
-          <main className="pt-28">
-            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-              <div className="min-h-[calc(100dvh-8rem)] grid place-items-center text-center">
+          <main className="pt-0">
+            {/* Hero full-bleed so waves span edge-to-edge */}
+            <section className="relative min-h-dvh w-full overflow-hidden">
+              <div className="pointer-events-none absolute inset-0 -z-10 text-black/10 dark:text-white">
+                <Waves lineColor="currentColor" backgroundColor="transparent" className="" />
+              </div>
+              <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 min-h-dvh grid place-items-center text-center">
                 <div className="space-y-4">
                   <DecryptedText
                     text="KENNETH CUBIAN"
                     className="select-none font-extrabold tracking-tight leading-[0.9] text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] text-black dark:text-white drop-shadow-[0_1px_0_rgba(0,0,0,0.04)]"
-                    speedMs={24}
+                    speedMs={60}
                   />
                   <div className="mt-4 sm:mt-6 text-black/70 dark:text-white/80">
                     <DecryptedText
                       text="Software Developer | Aspiring Engineer"
                       className="block font-semibold tracking-tight text-[4.5vw] sm:text-[3.6vw] md:text-[3vw] lg:text-[2.4vw]"
-                      speedMs={30}
+                      speedMs={70}
                     />
                     <DecryptedText
-                      text="React • Next.js • UI/UX"
+                      text="React • Next.js • TypeScript"
                       className="block font-medium tracking-tight text-[3.8vw] sm:text-[3vw] md:text-[2.4vw] lg:text-[2vw]"
-                      speedMs={34}
+                      speedMs={80}
                     />
+                    <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
+                      <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        className="hover:text-black dark:hover:text-white transition-colors"
+                      >
+                        <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                          <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM6.765 20.452H3.911V9h2.854v11.452zM5.337 7.433c-1.144 0-2.068-.926-2.068-2.068 0-1.141.924-2.066 2.068-2.066 1.141 0 2.066.925 2.066 2.066 0 1.142-.925 2.068-2.066 2.068zM20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.368-1.852 3.602 0 4.267 2.371 4.267 5.455v6.288z"/>
+                        </svg>
+                      </a>
+                      <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        className="hover:text-black dark:hover:text-white transition-colors"
+                      >
+                        <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                          <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                        </svg>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        className="hover:text-black dark:hover:text-white transition-colors"
+                      >
+                        <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                          <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
+            </section>
+
+            {/* TechStack section with plain background */}
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+              <section id="techstack" className="py-24 sm:py-28 md:py-32">
+                <ScrollReveal className="mb-10">
+                  <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
+                    TechStack
+                  </h2>
+                </ScrollReveal>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 max-w-5xl mx-auto">
+                  {[
+                    "React",
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "Node.js",
+                    "Express",
+                    "Prisma",
+                    "PostgreSQL",
+                  ].map((item, idx) => (
+                    <ScrollReveal key={item} delayMs={idx * 60}>
+                      <div className="rounded-xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur px-5 py-4 text-center text-sm sm:text-base font-semibold text-black/80 dark:text-white/80 shadow-sm">
+                        {item}
+                      </div>
+                    </ScrollReveal>
+                  ))}
+                </div>
+              </section>
             </div>
-            {children}
+        {children}
           </main>
         </div>
       </body>
