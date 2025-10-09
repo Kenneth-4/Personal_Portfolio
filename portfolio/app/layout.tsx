@@ -4,6 +4,7 @@ import "./globals.css";
 import Waves from "@/components/Waves";
 import DecryptedText from "@/components/DecryptedText";
 import ScrollReveal from "@/components/ScrollReveal";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -37,15 +38,12 @@ export default function RootLayout({
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
               <div className="mt-6 rounded-full border border-black/10 dark:border-white/15 bg-white/70 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:dark:bg-black/35 shadow-sm">
                 <div className="flex items-center justify-between px-6 py-3">
-                  <a href="/" className="flex items-center gap-3 font-bold tracking-tight text-black/80 dark:text-white text-lg sm:text-xl">
-                    <span className="inline-block h-3 w-3 rounded-full bg-black/60 dark:bg-white"></span>
-                    <span>Kenneth</span>
-                  </a>
+                  <ThemeToggle />
                   <nav className="hidden md:flex items-center gap-8 text-base font-bold text-black/70 dark:text-white/80">
                     <a href="#techstack" className="hover:text-black dark:hover:text-white transition-colors">TechStack</a>
                     <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
                     <a href="#resume" className="hover:text-black dark:hover:text-white transition-colors">Resume</a>
-                    <a href="#contact" className="hover:text-black dark:hover:text-white transition-colors">Contact</a>
+                    <a href="#certificate" className="hover:text-black dark:hover:text-white transition-colors">Certificates</a>
                   </nav>
                   <div className="flex items-center gap-2">
                     <a
@@ -79,8 +77,8 @@ export default function RootLayout({
                       speedMs={70}
                     />
                     <DecryptedText
-                      text="React • Next.js • TypeScript"
-                      className="block font-medium tracking-tight text-[3.8vw] sm:text-[3vw] md:text-[2.4vw] lg:text-[2vw]"
+                      text="Cavite, Philippines"
+                      className="block font-medium tracking-tight text-[4.0vw] sm:text-[3.5vw] md:text-[2.4vw] lg:text-[2vw]"
                       speedMs={80}
                     />
                     <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
@@ -188,6 +186,13 @@ export default function RootLayout({
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">React Native</span>
                       </div>
                     </ScrollReveal>
+                    {/* Expo */}
+                    <ScrollReveal delayMs={360}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Expo</span>
+                      </div>
+                    </ScrollReveal>
                   </div>
                 </div>
 
@@ -267,6 +272,13 @@ export default function RootLayout({
                       <div className="flex flex-col items-center justify-center gap-3">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-12 h-12" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">Supabase</span>
+                      </div>
+                    </ScrollReveal>
+                    {/* MongoDB */}
+                    <ScrollReveal delayMs={180}>
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-12 h-12" />
+                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">MongoDB</span>
                       </div>
                     </ScrollReveal>
                   </div>
