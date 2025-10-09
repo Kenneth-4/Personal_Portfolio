@@ -5,6 +5,8 @@ import Waves from "@/components/Waves";
 import DecryptedText from "@/components/DecryptedText";
 import ScrollReveal from "@/components/ScrollReveal";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileNav from "@/components/MobileNav";
+import GlareHover from "@/components/GlareHover";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -38,14 +40,17 @@ export default function RootLayout({
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
               <div className="mt-6 rounded-full border border-black/10 dark:border-white/15 bg-white/70 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:dark:bg-black/35 shadow-sm">
                 <div className="flex items-center justify-between px-6 py-3">
-                  <ThemeToggle />
+                  <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                  </div>
                   <nav className="hidden md:flex items-center gap-8 text-base font-bold text-black/70 dark:text-white/80">
                     <a href="#techstack" className="hover:text-black dark:hover:text-white transition-colors">TechStack</a>
                     <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
-                    <a href="#resume" className="hover:text-black dark:hover:text-white transition-colors">Resume</a>
                     <a href="#certificate" className="hover:text-black dark:hover:text-white transition-colors">Certificates</a>
                   </nav>
                   <div className="flex items-center gap-2">
+                    {/* Mobile burger at far right */}
+                    <MobileNav />
                     <a
                       href="#contact"
                       className="hidden sm:inline-flex rounded-full bg-black text-white dark:bg-white dark:text-black px-5 py-2.5 text-base font-bold shadow hover:opacity-90 transition-opacity"
@@ -67,18 +72,18 @@ export default function RootLayout({
                 <div className="space-y-4">
                   <DecryptedText
                     text="KENNETH CUBIAN"
-                    className="select-none font-extrabold tracking-tight leading-[0.9] text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] text-black dark:text-white drop-shadow-[0_1px_0_rgba(0,0,0,0.04)]"
+                    className="select-none font-extrabold tracking-tight leading-[0.9] text-[clamp(2.75rem,12vw,6.5rem)] text-black dark:text-white drop-shadow-[0_1px_0_rgba(0,0,0,0.04)]"
                     speedMs={60}
                   />
                   <div className="mt-4 sm:mt-6 text-black/70 dark:text-white/80">
                     <DecryptedText
                       text="Software Developer | Aspiring Engineer"
-                      className="block font-semibold tracking-tight text-[4.5vw] sm:text-[3.6vw] md:text-[3vw] lg:text-[2.4vw]"
+                      className="block font-semibold tracking-tight text-[clamp(1.25rem,6.5vw,2.5rem)]"
                       speedMs={70}
                     />
                     <DecryptedText
                       text="Cavite, Philippines"
-                      className="block font-medium tracking-tight text-[4.0vw] sm:text-[3.5vw] md:text-[2.4vw] lg:text-[2vw]"
+                      className="block font-medium tracking-tight text-[clamp(1rem,5.5vw,2rem)]"
                       speedMs={80}
                     />
                     <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
@@ -134,7 +139,7 @@ export default function RootLayout({
                 {/* Frameworks */}
                 <div className="max-w-5xl mx-auto">
                   <ScrollReveal className="mb-6">
-                    <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white">Frameworks</h3>
+                    <h3 className="text-center text-xl sm:text-2xl font-bold text-black dark:text-white">Frameworks</h3>
                   </ScrollReveal>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {/* React */}
@@ -189,7 +194,7 @@ export default function RootLayout({
                     {/* Expo */}
                     <ScrollReveal delayMs={360}>
                       <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-12 h-12" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-12 h-12 dark:invert" />
                         <span className="text-sm font-semibold text-black/80 dark:text-white/80">Expo</span>
                       </div>
                     </ScrollReveal>
@@ -199,7 +204,7 @@ export default function RootLayout({
                 {/* Languages */}
                 <div className="max-w-5xl mx-auto mt-12">
                   <ScrollReveal className="mb-6">
-                    <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white">Languages</h3>
+                    <h3 className="text-center text-xl sm:text-2xl font-bold text-black dark:text-white">Languages</h3>
                   </ScrollReveal>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {/* TypeScript */}
@@ -243,7 +248,7 @@ export default function RootLayout({
                 {/* Databases */}
                 <div className="max-w-5xl mx-auto mt-12">
                   <ScrollReveal className="mb-6">
-                    <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white">Databases</h3>
+                    <h3 className="text-center text-xl sm:text-2xl font-bold text-black dark:text-white">Databases</h3>
                   </ScrollReveal>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {/* PostgreSQL */}
@@ -282,6 +287,316 @@ export default function RootLayout({
                       </div>
                     </ScrollReveal>
                   </div>
+                </div>
+              </section>
+
+              {/* Projects section */}
+              <section id="projects" className="py-24 sm:py-28 md:py-32">
+                <ScrollReveal className="mb-16">
+                  <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
+                    My Projects
+                  </h2>
+                </ScrollReveal>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
+                    {/* Project 1 */}
+                    <ScrollReveal delayMs={0}>
+                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="relative">
+                          <a
+                            href="https://github.com/your-username/project1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                          >
+                            <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                              <span className="text-white text-lg font-semibold">Project 1</span>
+                            </div>
+                          </a>
+                          <a
+                            href="https://github.com/your-username/project1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
+                          >
+                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">E-Commerce Platform</h3>
+                          <p className="text-sm text-black/70 dark:text-white/70">Full-stack e-commerce solution built with React, Node.js, and PostgreSQL</p>
+                        </div>
+                      </div>
+                    </ScrollReveal>
+
+                    {/* Project 2 */}
+                    <ScrollReveal delayMs={100}>
+                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="relative">
+                          <a
+                            href="https://github.com/your-username/project2"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                          >
+                            <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                              <span className="text-white text-lg font-semibold">Project 2</span>
+                            </div>
+                          </a>
+                          <a
+                            href="https://github.com/your-username/project2"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
+                          >
+                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">Task Management App</h3>
+                          <p className="text-sm text-black/70 dark:text-white/70">Collaborative task management tool with real-time updates and notifications</p>
+                        </div>
+                      </div>
+                    </ScrollReveal>
+
+                    {/* Project 3 */}
+                    <ScrollReveal delayMs={200}>
+                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="relative">
+                          <a
+                            href="https://github.com/your-username/project3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                          >
+                            <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                              <span className="text-white text-lg font-semibold">Project 3</span>
+                            </div>
+                          </a>
+                          <a
+                            href="https://github.com/your-username/project3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
+                          >
+                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">Weather Dashboard</h3>
+                          <p className="text-sm text-black/70 dark:text-white/70">Real-time weather tracking with interactive maps and forecasts</p>
+                        </div>
+                      </div>
+                    </ScrollReveal>
+
+                    {/* Project 4 */}
+                    <ScrollReveal delayMs={300}>
+                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="relative">
+                          <a
+                            href="https://github.com/your-username/project4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                          >
+                            <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                              <span className="text-white text-lg font-semibold">Project 4</span>
+                            </div>
+                          </a>
+                          <a
+                            href="https://github.com/your-username/project4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
+                          >
+                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">Portfolio Website</h3>
+                          <p className="text-sm text-black/70 dark:text-white/70">Personal portfolio built with Next.js, Tailwind CSS, and modern animations</p>
+                        </div>
+                      </div>
+                    </ScrollReveal>
+                  </div>
+              </section>
+
+              {/* Certificates section */}
+              <section id="certificate" className="py-24 sm:py-28 md:py-32">
+                <ScrollReveal className="mb-16">
+                  <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
+                    My Certificates
+                  </h2>
+                </ScrollReveal>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+                  {/* Certificate 1 */}
+                  <ScrollReveal delayMs={0}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 1</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">JavaScript Fundamentals</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">FreeCodeCamp</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 2 */}
+                  <ScrollReveal delayMs={100}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 2</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">React Development</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Meta</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 3 */}
+                  <ScrollReveal delayMs={200}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 3</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Full Stack Development</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Coursera</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 4 */}
+                  <ScrollReveal delayMs={300}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 4</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Python Programming</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Google</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 5 */}
+                  <ScrollReveal delayMs={400}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 5</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">AWS Cloud Practitioner</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Amazon</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 6 */}
+                  <ScrollReveal delayMs={500}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 6</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">UI/UX Design</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Google</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 7 */}
+                  <ScrollReveal delayMs={600}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 7</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Data Science</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">IBM</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 8 */}
+                  <ScrollReveal delayMs={700}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 8</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Cybersecurity</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Cisco</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* Certificate 9 */}
+                  <ScrollReveal delayMs={800}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] bg-gradient-to-br from-gray-500 to-slate-600 flex items-center justify-center">
+                            <span className="text-white text-xl font-semibold">Certificate 9</span>
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Machine Learning</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Stanford</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
                 </div>
               </section>
             </div>

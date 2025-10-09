@@ -23,7 +23,7 @@ export default function DecryptedText({
   const cyclesRef = useRef<number[]>([]);
   const intervalRef = useRef<number | null>(null);
 
-  const targetChars = useMemo(() => text.split("").map(c => (c === " " ? "\u00A0" : c)), [text]);
+  const targetChars = useMemo(() => text.split("").map(c => c), [text]);
 
   useEffect(() => {
     const node = containerRef.current;
@@ -47,7 +47,7 @@ export default function DecryptedText({
   useEffect(() => {
     if (!visible) return;
     const rand = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
-    cyclesRef.current = targetChars.map(c => (c === "\u00A0" ? 0 : rand(4, 16)));
+    cyclesRef.current = targetChars.map(c => (c === " " ? 0 : rand(4, 16)));
     const pick = () => charset[Math.floor(Math.random() * charset.length)];
 
     intervalRef.current = window.setInterval(() => {
