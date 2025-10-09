@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Waves from "@/components/Waves";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${geistMono.variable} antialiased`}
       >
         <div className="relative min-h-dvh">
           {/* Background Waves */}
@@ -37,6 +38,32 @@ export default function RootLayout({
               className=""
             />
           </div>
+          {/* Header */}
+          <header className="fixed top-0 inset-x-0 z-40">
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+              <div className="mt-6 rounded-full border border-black/10 dark:border-white/15 bg-white/70 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:dark:bg-black/35 shadow-sm">
+                <div className="flex items-center justify-between px-6 py-3">
+                  <a href="/" className="flex items-center gap-3 font-bold tracking-tight text-black/80 dark:text-white text-lg sm:text-xl">
+                    <span className="inline-block h-3 w-3 rounded-full bg-black/60 dark:bg-white"></span>
+                    <span>Kenneth</span>
+                  </a>
+                  <nav className="hidden md:flex items-center gap-8 text-base font-bold text-black/70 dark:text-white/80">
+                    <a href="#about" className="hover:text-black dark:hover:text-white transition-colors">About</a>
+                    <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" className="hover:text-black dark:hover:text-white transition-colors">Contact</a>
+                  </nav>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href="#contact"
+                      className="hidden sm:inline-flex rounded-full bg-black text-white dark:bg-white dark:text-black px-5 py-2.5 text-base font-bold shadow hover:opacity-90 transition-opacity"
+                    >
+                      Get in touch
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
           {children}
         </div>
       </body>
