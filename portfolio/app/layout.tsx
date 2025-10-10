@@ -6,6 +6,7 @@ import DecryptedText from "@/components/DecryptedText";
 import ScrollReveal from "@/components/ScrollReveal";
 import ThemeToggle from "@/components/ThemeToggle";
 import MobileNav from "@/components/MobileNav";
+import ContactForm from "@/components/ContactForm";
 import GlareHover from "@/components/GlareHover";
 
 const inter = Inter({
@@ -68,7 +69,7 @@ export default function RootLayout({
               <div className="pointer-events-none absolute inset-0 -z-10 text-black/10 dark:text-white">
                 <Waves lineColor="currentColor" backgroundColor="transparent" className="" />
               </div>
-              <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 min-h-dvh grid place-items-center text-center">
+              <div className="mx-auto max-w-7xl px-1 sm:px-3 lg:px-4 min-h-dvh grid place-items-center text-center">
                 <div className="space-y-4">
                   <DecryptedText
                     text="KENNETH CUBIAN"
@@ -129,7 +130,7 @@ export default function RootLayout({
             </section>
 
             {/* TechStack section with plain background */}
-            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-1 sm:px-3 lg:px-4">
               <section id="techstack" className="py-24 sm:py-28 md:py-32">
                 <ScrollReveal className="mb-10">
                   <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
@@ -297,139 +298,182 @@ export default function RootLayout({
                     My Projects
                   </h2>
                 </ScrollReveal>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
-                    {/* Project 1 */}
-                    <ScrollReveal delayMs={0}>
-                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
-                        <div className="relative">
-                          <a
-                            href="https://github.com/your-username/project1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block"
-                          >
-                            <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                              <span className="text-white text-lg font-semibold">Project 1</span>
-                            </div>
-                          </a>
-                          <a
-                            href="https://github.com/your-username/project1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
-                          >
-                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                            </svg>
-                          </a>
-                        </div>
-                        <div className="p-6">
-                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">E-Commerce Platform</h3>
-                          <p className="text-sm text-black/70 dark:text-white/70">Full-stack e-commerce solution built with React, Node.js, and PostgreSQL</p>
+                <div className="max-w-7xl mx-auto space-y-8 sm:space-y-10 px-1 sm:px-3 lg:px-4">
+                  {/* Project 1 */}
+                  <ScrollReveal delayMs={0}>
+                    <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
+                      {/* Image left */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/project1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">Project 1</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/project1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content right */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">E-Commerce Platform</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Full-stack e-commerce solution built with React, Node.js, and PostgreSQL.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
+                          </div>
                         </div>
                       </div>
-                    </ScrollReveal>
+                    </div>
+                  </ScrollReveal>
 
-                    {/* Project 2 */}
-                    <ScrollReveal delayMs={100}>
-                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
-                        <div className="relative">
-                          <a
-                            href="https://github.com/your-username/project2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block"
-                          >
-                            <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
-                              <span className="text-white text-lg font-semibold">Project 2</span>
-                            </div>
-                          </a>
-                          <a
-                            href="https://github.com/your-username/project2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
-                          >
-                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                            </svg>
-                          </a>
-                        </div>
-                        <div className="p-6">
-                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">Task Management App</h3>
-                          <p className="text-sm text-black/70 dark:text-white/70">Collaborative task management tool with real-time updates and notifications</p>
+                  {/* Project 2 (reversed) */}
+                  <ScrollReveal delayMs={100}>
+                    <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
+                      {/* Image right */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/project2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">Project 2</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/project2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content left */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Task Management App</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Collaborative task management tool with real-time updates and notifications.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.io" title="Socket.io" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma" title="Prisma" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" className="w-6 h-6" />
+                          </div>
                         </div>
                       </div>
-                    </ScrollReveal>
+                    </div>
+                  </ScrollReveal>
 
-                    {/* Project 3 */}
-                    <ScrollReveal delayMs={200}>
-                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
-                        <div className="relative">
-                          <a
-                            href="https://github.com/your-username/project3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block"
-                          >
-                            <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                              <span className="text-white text-lg font-semibold">Project 3</span>
-                            </div>
-                          </a>
-                          <a
-                            href="https://github.com/your-username/project3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
-                          >
-                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                            </svg>
-                          </a>
-                        </div>
-                        <div className="p-6">
-                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">Weather Dashboard</h3>
-                          <p className="text-sm text-black/70 dark:text-white/70">Real-time weather tracking with interactive maps and forecasts</p>
+                  {/* Project 3 */}
+                  <ScrollReveal delayMs={200}>
+                    <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
+                      {/* Image left */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/project3"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">Project 3</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/project3"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content right */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Weather Dashboard</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Real-time weather tracking with interactive maps and forecasts.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" className="w-6 h-6" />
+                          </div>
                         </div>
                       </div>
-                    </ScrollReveal>
+                    </div>
+                  </ScrollReveal>
 
-                    {/* Project 4 */}
-                    <ScrollReveal delayMs={300}>
-                      <div className="group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg hover:shadow-xl transition-all duration-300">
-                        <div className="relative">
-                          <a
-                            href="https://github.com/your-username/project4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block"
-                          >
-                            <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-                              <span className="text-white text-lg font-semibold">Project 4</span>
-                            </div>
-                          </a>
-                          <a
-                            href="https://github.com/your-username/project4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200 opacity-0 group-hover:opacity-100"
-                          >
-                            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                            </svg>
-                          </a>
-                        </div>
-                        <div className="p-6">
-                          <h3 className="text-xl font-bold text-black dark:text-white mb-2">Portfolio Website</h3>
-                          <p className="text-sm text-black/70 dark:text-white/70">Personal portfolio built with Next.js, Tailwind CSS, and modern animations</p>
+                  {/* Project 4 (reversed) */}
+                  <ScrollReveal delayMs={300}>
+                    <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
+                      {/* Image right */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/project4"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">Project 4</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/project4"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content left */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Portfolio Website</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Personal portfolio built with Next.js, Tailwind CSS, and modern animations.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg" alt="Framer" title="Framer" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" title="Vercel" className="w-6 h-6 dark:invert" />
+                          </div>
                         </div>
                       </div>
-                    </ScrollReveal>
-                  </div>
+                    </div>
+                  </ScrollReveal>
+                </div>
               </section>
 
               {/* Certificates section */}
-              <section id="certificate" className="py-24 sm:py-28 md:py-32">
+              <section id="certificate" className="pt-24 sm:pt-28 md:pt-32 pb-0 mb-0">
                 <ScrollReveal className="mb-16">
                   <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
                     My Certificates
@@ -601,6 +645,39 @@ export default function RootLayout({
               </section>
             </div>
         {children}
+
+            {/* Footer */}
+            <footer className="mt-[25vh] border-t border-black/10 dark:border-white/15">
+              <div className="mx-auto max-w-7xl px-1 sm:px-3 lg:px-4 py-12 sm:py-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+                  {/* Left: Links */}
+                  <div>
+                    <h3 className="text-lg font-bold text-black dark:text-white mb-4">Pages</h3>
+                    <ul className="space-y-2 text-black/70 dark:text-white/80">
+                      <li>
+                        <a href="#techstack" className="hover:text-black dark:hover:text-white transition-colors">TechStack</a>
+                      </li>
+                      <li>
+                        <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
+                      </li>
+                      <li>
+                        <a href="#certificate" className="hover:text-black dark:hover:text-white transition-colors">Certificates</a>
+                      </li>
+                      <li>
+                        <a href="#contact" className="hover:text-black dark:hover:text-white transition-colors">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Right: Contact form */}
+                  <div id="contact">
+                    <h3 className="text-lg font-bold text-black dark:text-white mb-4">Send a message</h3>
+                    <ContactForm />
+                  </div>
+                </div>
+                <div className="mt-12 text-xs text-black/50 dark:text-white/50">© {new Date().getFullYear()} Kenneth Cubian. All rights reserved.</div>
+              </div>
+            </footer>
           </main>
         </div>
       </body>
