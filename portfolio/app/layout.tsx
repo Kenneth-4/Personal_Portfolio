@@ -329,13 +329,16 @@ export default function RootLayout({
                       {/* Content right */}
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">E-Commerce Platform</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Full-stack e-commerce solution built with React, Node.js, and PostgreSQL.</p>
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Nookpay System</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"><a href="https://nookpay.site" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">nookpay.site</a></p>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam molestias quas sed sit nihil saepe, illo, eum corporis beatae blanditiis atque accusantium aperiam similique praesentium ut dolorum soluta deleniti.</p>
                           <div className="flex flex-wrap items-center gap-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
+                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
+                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg" alt="React Native" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" className="w-6 h-6 dark:invert" />
                           </div>
                         </div>
                       </div>
@@ -372,13 +375,14 @@ export default function RootLayout({
                       {/* Content left */}
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Task Management App</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Collaborative task management tool with real-time updates and notifications.</p>
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">MedQueue</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">MedQueue is a platform for booking appointments with doctors.</p>
                           <div className="flex flex-wrap items-center gap-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" className="w-6 h-6 dark:invert" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.io" title="Socket.io" className="w-6 h-6 dark:invert" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma" title="Prisma" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" className="w-6 h-6" />
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />  
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-6 h-6" />
                           </div>
                         </div>
                       </div>
@@ -415,12 +419,15 @@ export default function RootLayout({
                       {/* Content right */}
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Weather Dashboard</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Real-time weather tracking with interactive maps and forecasts.</p>
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">CinemaX</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">CinemaX is a platform for booking tickets for movies.</p>
                           <div className="flex flex-wrap items-center gap-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-6 h-6" />
+                            
                           </div>
                         </div>
                       </div>
@@ -457,13 +464,15 @@ export default function RootLayout({
                       {/* Content left */}
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Portfolio Website</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Personal portfolio built with Next.js, Tailwind CSS, and modern animations.</p>
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">cipherIT</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">cipherIT is a platform for storing passwords and other sensitive information.</p>
                           <div className="flex flex-wrap items-center gap-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg" alt="Framer" title="Framer" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" title="Vercel" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-6 h-6" />
+                            
                           </div>
                         </div>
                       </div>
