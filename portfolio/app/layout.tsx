@@ -89,7 +89,7 @@ export default function RootLayout({
                     />
                     <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
                       <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.linkedin.com/in/kenneth-cubian-47b799317/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
@@ -100,7 +100,7 @@ export default function RootLayout({
                         </svg>
                       </a>
                       <a
-                        href="https://github.com/"
+                        href="https://github.com/Kenneth-4"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -111,7 +111,7 @@ export default function RootLayout({
                         </svg>
                       </a>
                       <a
-                        href="https://www.instagram.com/"
+                        href="https://www.instagram.com/_ken_neth_10/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Instagram"
