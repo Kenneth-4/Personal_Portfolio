@@ -318,7 +318,7 @@ export default function RootLayout({
                           href="https://github.com/your-username/project1"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          className="absolute top-3 left-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
                           aria-label="GitHub"
                         >
                           <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -383,96 +383,6 @@ export default function RootLayout({
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-6 h-6 dark:invert" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-6 h-6" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </ScrollReveal>
-
-                  {/* Project 3 */}
-                  <ScrollReveal delayMs={200}>
-                    <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
-                      {/* Image left */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                        <a
-                          href="https://github.com/your-username/project3"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                            <span className="text-white text-lg font-semibold">Project 3</span>
-                          </div>
-                        </a>
-                        <a
-                          href="https://github.com/your-username/project3"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
-                          aria-label="GitHub"
-                        >
-                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                          </svg>
-                        </a>
-                      </div>
-                      {/* Content right */}
-                      <div className="md:w-5/12 flex items-center">
-                        <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">CinemaX</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">CinemaX is a platform for booking tickets for movies.</p>
-                          <div className="flex flex-wrap items-center gap-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-6 h-6" />
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </ScrollReveal>
-
-                  {/* Project 4 (reversed) */}
-                  <ScrollReveal delayMs={300}>
-                    <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
-                      {/* Image right */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                        <a
-                          href="https://github.com/your-username/project4"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-                            <span className="text-white text-lg font-semibold">Project 4</span>
-                          </div>
-                        </a>
-                        <a
-                          href="https://github.com/your-username/project4"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
-                          aria-label="GitHub"
-                        >
-                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                          </svg>
-                        </a>
-                      </div>
-                      {/* Content left */}
-                      <div className="md:w-5/12 flex items-center">
-                        <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">cipherIT</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">cipherIT is a platform for storing passwords and other sensitive information.</p>
-                          <div className="flex flex-wrap items-center gap-3">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-6 h-6" />
-                            
                           </div>
                         </div>
                       </div>
