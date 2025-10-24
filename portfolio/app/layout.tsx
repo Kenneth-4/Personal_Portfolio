@@ -299,8 +299,22 @@ export default function RootLayout({
                   </h2>
                 </ScrollReveal>
                 <div className="max-w-7xl mx-auto space-y-8 sm:space-y-10 px-1 sm:px-3 lg:px-4">
-                  {/* Project 1 */}
-                  <ScrollReveal delayMs={0}>
+                  {/* NookPay Ecosystem */}
+                  <div className="relative rounded-3xl bg-gradient-to-br from-orange-400/20 to-orange-600/30 dark:from-orange-500/20 dark:to-orange-700/30 border border-orange-300/30 dark:border-orange-400/30 backdrop-blur-sm p-6 sm:p-8 md:p-10">
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-600/10 rounded-3xl"></div>
+                    <div className="relative space-y-8 sm:space-y-10">
+                      {/* Ecosystem Title */}
+                      <div className="text-center mb-8">
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-800 dark:text-orange-200 mb-2">
+                          NookPay Ecosystem
+                        </h3>
+                        <p className="text-orange-700/80 dark:text-orange-300/80 text-sm sm:text-base">
+                          Complete payment solution with integrated systems
+                        </p>
+                      </div>
+                      
+                      {/* Project 1 - Main NookPay System */}
+                      <ScrollReveal delayMs={0}>
                     <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
                       {/* Image left */}
                       <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
@@ -345,8 +359,142 @@ export default function RootLayout({
                     </div>
                   </ScrollReveal>
 
-                  {/* Project 2 (reversed) */}
+                  {/* NookPay POS System */}
                   <ScrollReveal delayMs={100}>
+                    <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
+                      {/* Image right */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/nookpay-pos"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">NookPay POS</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/nookpay-pos"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content left */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay POS System</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Point of Sale system integrated with NookPay payment processing for seamless transactions.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-6 h-6" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* NookPay Ordering System */}
+                  <ScrollReveal delayMs={200}>
+                    <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
+                      {/* Image left */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/nookpay-ordering"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">NookPay Ordering</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/nookpay-ordering"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 left-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content right */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay Ordering System</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Online ordering platform with real-time inventory management and payment integration.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-6 h-6" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+
+                  {/* NookPay Landing Page */}
+                  <ScrollReveal delayMs={300}>
+                    <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
+                      {/* Image right */}
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                        <a
+                          href="https://github.com/your-username/nookpay-landing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                            <span className="text-white text-lg font-semibold">NookPay Landing</span>
+                          </div>
+                        </a>
+                        <a
+                          href="https://github.com/your-username/nookpay-landing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          aria-label="GitHub"
+                        >
+                          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                      </div>
+                      {/* Content left */}
+                      <div className="md:w-5/12 flex items-center">
+                        <div className="w-full">
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay Landing Page</h3>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Modern marketing website showcasing NookPay features and driving user acquisition.</p>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-6 h-6 dark:invert" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-6 h-6" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" className="w-6 h-6 dark:invert" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+                    </div>
+                  </div>
+
+                  {/* Project 2 (reversed) */}
+                  <ScrollReveal delayMs={400}>
                     <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
                       {/* Image right */}
                       <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
@@ -389,8 +537,8 @@ export default function RootLayout({
                     </div>
                   </ScrollReveal>
 
-                  {/* Project 5 */}
-                  <ScrollReveal delayMs={200}>
+                  {/* Project 3 */}
+                  <ScrollReveal delayMs={500}>
                     <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
                       {/* Image left */}
                       <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
