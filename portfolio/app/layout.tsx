@@ -9,6 +9,7 @@ import MobileNav from "@/components/MobileNav";
 import ContactForm from "@/components/ContactForm";
 import GlareHover from "@/components/GlareHover";
 import TiltedCard from "@/components/TiltedCard";
+import ProfileCard from "@/components/ProfileCard";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -158,12 +159,18 @@ export default function RootLayout({
                   {/* Frameworks Card */}
                   <ScrollReveal>
                     <TiltedCard className="w-full h-full">
-                      <div className="relative rounded-3xl bg-black/90 dark:bg-white/90 backdrop-blur-sm border border-white/20 dark:border-black/20 p-8 sm:p-10 md:p-12 h-full min-h-[500px]">
-                        <div className="relative h-full flex flex-col">
-                          <h3 className="text-center text-2xl sm:text-3xl font-bold text-white dark:text-black mb-8">
-                            Frameworks & Libraries
-                          </h3>
-                          <div className="grid grid-cols-3 gap-6 flex-1">
+                      <ProfileCard
+                        gradientFrom="from-blue-600"
+                        gradientTo="to-purple-700"
+                        borderColor="border-blue-400/30"
+                        title="Frameworks & Libraries"
+                        icon={
+                          <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                          </svg>
+                        }
+                      >
+                        <div className="grid grid-cols-3 gap-6">
                             {/* React */}
                             <div className="flex flex-col items-center gap-3 group">
                               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12" />
@@ -194,20 +201,26 @@ export default function RootLayout({
                               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-12 h-12 invert dark:invert-0" />
                               <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Expo</span>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                      </ProfileCard>
                     </TiltedCard>
                   </ScrollReveal>
 
                   {/* Languages Card */}
                   <ScrollReveal delayMs={100}>
                     <TiltedCard className="w-full h-full">
-                      <div className="relative rounded-3xl bg-black/90 dark:bg-white/90 backdrop-blur-sm border border-white/20 dark:border-black/20 p-8 sm:p-10 md:p-12 h-full min-h-[500px]">
-                        <div className="relative h-full flex flex-col">
-                          <h3 className="text-center text-2xl sm:text-3xl font-bold text-white dark:text-black mb-8">
-                            Programming Languages
-                          </h3>
+                      <ProfileCard
+                        gradientFrom="from-emerald-600"
+                        gradientTo="to-green-700"
+                        borderColor="border-emerald-400/30"
+                        title="Programming Languages"
+                        icon={
+                          <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="16,18 22,12 16,6"/>
+                            <polyline points="8,6 2,12 8,18"/>
+                          </svg>
+                        }
+                      >
                           <div className="grid grid-cols-3 gap-6 flex-1">
                             {/* TypeScript */}
                             <div className="flex flex-col items-center gap-3 group">
@@ -234,20 +247,27 @@ export default function RootLayout({
                               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-12 h-12" />
                               <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">PHP</span>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                      </ProfileCard>
                     </TiltedCard>
                   </ScrollReveal>
 
                   {/* Databases Card */}
                   <ScrollReveal delayMs={200}>
                     <TiltedCard className="w-full h-full">
-                      <div className="relative rounded-3xl bg-black/90 dark:bg-white/90 backdrop-blur-sm border border-white/20 dark:border-black/20 p-8 sm:p-10 md:p-12 h-full min-h-[500px]">
-                        <div className="relative h-full flex flex-col">
-                          <h3 className="text-center text-2xl sm:text-3xl font-bold text-white dark:text-black mb-8">
-                            Databases & Storage
-                          </h3>
+                      <ProfileCard
+                        gradientFrom="from-orange-600"
+                        gradientTo="to-red-700"
+                        borderColor="border-orange-400/30"
+                        title="Databases & Storage"
+                        icon={
+                          <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                          </svg>
+                        }
+                      >
                           <div className="grid grid-cols-3 gap-6 flex-1">
                             {/* PostgreSQL */}
                             <div className="flex flex-col items-center gap-3 group">
@@ -274,9 +294,8 @@ export default function RootLayout({
                               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-12 h-12" />
                               <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">MongoDB</span>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                      </ProfileCard>
                     </TiltedCard>
                   </ScrollReveal>
                 </div>
