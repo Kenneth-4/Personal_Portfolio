@@ -8,6 +8,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import MobileNav from "@/components/MobileNav";
 import ContactForm from "@/components/ContactForm";
 import GlareHover from "@/components/GlareHover";
+import TiltedCard from "@/components/TiltedCard";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -56,7 +57,7 @@ export default function RootLayout({
                       href="#contact"
                       className="hidden sm:inline-flex rounded-full bg-black text-white dark:bg-white dark:text-black px-5 py-2.5 text-base font-bold shadow hover:opacity-90 transition-opacity"
                     >
-                      Get in touch
+                      Hire Me
                     </a>
                   </div>
                 </div>
@@ -87,6 +88,20 @@ export default function RootLayout({
                       className="block font-medium tracking-tight text-[clamp(1rem,5.5vw,2rem)]"
                       speedMs={80}
                     />
+                    <div className="mt-8 flex flex-col items-center justify-center gap-4">
+                      <a
+                        href="/Kenneth_Resume.pdf"
+                        download="Kenneth_Resume.pdf"
+                        className="inline-flex items-center gap-2 rounded-full bg-black text-white dark:bg-white dark:text-black px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                      >
+                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                          <polyline points="7,10 12,15 17,10"/>
+                          <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download Resume
+                      </a>
+                    </div>
                     <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
                       <a
                         href="https://www.linkedin.com/in/kenneth-cubian-47b799317/"
@@ -129,165 +144,141 @@ export default function RootLayout({
               </div>
             </section>
 
-            {/* TechStack section with plain background */}
+            {/* TechStack section with tilted cards */}
             <div className="mx-auto max-w-7xl px-1 sm:px-3 lg:px-4">
               <section id="techstack" className="py-24 sm:py-28 md:py-32">
-                <ScrollReveal className="mb-10">
+                <ScrollReveal className="mb-16">
                   <h2 className="text-center font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl text-black dark:text-white">
                     My TechStack
                   </h2>
                 </ScrollReveal>
-                {/* Frameworks */}
-                <div className="max-w-5xl mx-auto">
-                  <ScrollReveal className="mb-6">
-                    <h3 className="text-center text-xl sm:text-2xl font-bold text-black dark:text-white">Frameworks</h3>
-                  </ScrollReveal>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-                    {/* React */}
-                    <ScrollReveal>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">React</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Next.js */}
-                    <ScrollReveal delayMs={60}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-12 h-12 dark:invert" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Next.js</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Tailwind CSS */}
-                    <ScrollReveal delayMs={120}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Tailwind CSS</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Express */}
-                    <ScrollReveal delayMs={180}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className="w-12 h-12 dark:invert" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Express</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Django */}
-                    <ScrollReveal delayMs={240}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Django</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Laravel */}
-                    <ScrollReveal delayMs={300}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Laravel</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* React Native */}
-                    <ScrollReveal delayMs={360}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg" alt="React Native" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">React Native</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Expo */}
-                    <ScrollReveal delayMs={360}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-12 h-12 dark:invert" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Expo</span>
-                      </div>
-                    </ScrollReveal>
-                  </div>
-                </div>
 
-                {/* Languages */}
-                <div className="max-w-5xl mx-auto mt-12">
-                  <ScrollReveal className="mb-6">
-                    <h3 className="text-center text-xl sm:text-2xl font-bold text-black dark:text-white">Languages</h3>
+                {/* Tech Stack Cards Container - 3 Columns */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                  {/* Frameworks Card */}
+                  <ScrollReveal>
+                    <TiltedCard className="w-full h-full">
+                      <div className="relative rounded-3xl bg-black/90 dark:bg-white/90 backdrop-blur-sm border border-white/20 dark:border-black/20 p-8 sm:p-10 md:p-12 h-full min-h-[500px]">
+                        <div className="relative h-full flex flex-col">
+                          <h3 className="text-center text-2xl sm:text-3xl font-bold text-white dark:text-black mb-8">
+                            Frameworks & Libraries
+                          </h3>
+                          <div className="grid grid-cols-3 gap-6 flex-1">
+                            {/* React */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">React</span>
+                            </div>
+                            {/* Next.js */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Next.js</span>
+                            </div>
+                            {/* Tailwind CSS */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Tailwind CSS</span>
+                            </div>
+                            {/* Express */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className="w-12 h-12 invert dark:invert-0" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Express</span>
+                            </div>
+                            {/* React Native */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg" alt="React Native" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">React Native</span>
+                            </div>
+                            {/* Expo */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo" className="w-12 h-12 invert dark:invert-0" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Expo</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </TiltedCard>
                   </ScrollReveal>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-                    {/* TypeScript */}
-                    <ScrollReveal>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">TypeScript</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* JavaScript */}
-                    <ScrollReveal delayMs={60}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">JavaScript</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Python */}
-                    <ScrollReveal delayMs={120}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Python</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Java */}
-                    <ScrollReveal delayMs={180}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Java</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* PHP */}
-                    <ScrollReveal delayMs={240}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">PHP</span>
-                      </div>
-                    </ScrollReveal>
-                  </div>
-                </div>
 
-                {/* Databases */}
-                <div className="max-w-5xl mx-auto mt-12">
-                  <ScrollReveal className="mb-6">
-                    <h3 className="text-center text-xl sm:text-2xl font-bold text-black dark:text-white">Databases</h3>
+                  {/* Languages Card */}
+                  <ScrollReveal delayMs={100}>
+                    <TiltedCard className="w-full h-full">
+                      <div className="relative rounded-3xl bg-black/90 dark:bg-white/90 backdrop-blur-sm border border-white/20 dark:border-black/20 p-8 sm:p-10 md:p-12 h-full min-h-[500px]">
+                        <div className="relative h-full flex flex-col">
+                          <h3 className="text-center text-2xl sm:text-3xl font-bold text-white dark:text-black mb-8">
+                            Programming Languages
+                          </h3>
+                          <div className="grid grid-cols-3 gap-6 flex-1">
+                            {/* TypeScript */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">TypeScript</span>
+                            </div>
+                            {/* JavaScript */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">JavaScript</span>
+                            </div>
+                            {/* Python */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Python</span>
+                            </div>
+                            {/* Java */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Java</span>
+                            </div>
+                            {/* PHP */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">PHP</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </TiltedCard>
                   </ScrollReveal>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-                    {/* PostgreSQL */}
-                    <ScrollReveal>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">PostgreSQL</span>
+
+                  {/* Databases Card */}
+                  <ScrollReveal delayMs={200}>
+                    <TiltedCard className="w-full h-full">
+                      <div className="relative rounded-3xl bg-black/90 dark:bg-white/90 backdrop-blur-sm border border-white/20 dark:border-black/20 p-8 sm:p-10 md:p-12 h-full min-h-[500px]">
+                        <div className="relative h-full flex flex-col">
+                          <h3 className="text-center text-2xl sm:text-3xl font-bold text-white dark:text-black mb-8">
+                            Databases & Storage
+                          </h3>
+                          <div className="grid grid-cols-3 gap-6 flex-1">
+                            {/* PostgreSQL */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">PostgreSQL</span>
+                            </div>
+                            {/* MySQL */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">MySQL</span>
+                            </div>
+                            {/* Firebase */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Firebase</span>
+                            </div>
+                            {/* Supabase */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Supabase</span>
+                            </div>
+                            {/* MongoDB */}
+                            <div className="flex flex-col items-center gap-3 group">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-12 h-12" />
+                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">MongoDB</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </ScrollReveal>
-                    {/* MySQL */}
-                    <ScrollReveal delayMs={60}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">MySQL</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Firebase */}
-                    <ScrollReveal delayMs={120}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Firebase</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* Supabase */}
-                    <ScrollReveal delayMs={180}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">Supabase</span>
-                      </div>
-                    </ScrollReveal>
-                    {/* MongoDB */}
-                    <ScrollReveal delayMs={180}>
-                      <div className="flex flex-col items-center justify-center gap-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-12 h-12" />
-                        <span className="text-sm font-semibold text-black/80 dark:text-white/80">MongoDB</span>
-                      </div>
-                    </ScrollReveal>
-                  </div>
+                    </TiltedCard>
+                  </ScrollReveal>
                 </div>
               </section>
 
@@ -514,7 +505,7 @@ export default function RootLayout({
                           href="https://github.com/your-username/project3"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="absolute top-3 right-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
+                          className="absolute top-3 left-3 p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur transition-all duration-200"
                           aria-label="GitHub"
                         >
                           <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
