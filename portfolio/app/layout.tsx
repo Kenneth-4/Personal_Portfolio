@@ -545,15 +545,19 @@ export default function RootLayout({
                     <div className="group">
                       <GlareHover className="relative" roundedClassName="rounded-2xl">
                         <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 1</span>
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/Web_dev.png" 
+                              alt="Web Development Fundamentals" 
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
                       </GlareHover>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">JavaScript Fundamentals</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">FreeCodeCamp</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Web Development Fundamentals</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">IBM SkillsBuild</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -563,15 +567,19 @@ export default function RootLayout({
                     <div className="group">
                       <GlareHover className="relative" roundedClassName="rounded-2xl">
                         <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 2</span>
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/web_test_deploy.png" 
+                              alt="React Development Certificate" 
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
                       </GlareHover>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">React Development</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Meta</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Website Testing and Deployment</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">IBM SkillsBuild</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -581,15 +589,19 @@ export default function RootLayout({
                     <div className="group">
                       <GlareHover className="relative" roundedClassName="rounded-2xl">
                         <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 3</span>
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/devops.jpg" 
+                              alt="Full Stack Development Certificate" 
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
                       </GlareHover>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Full Stack Development</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Coursera</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">DevOps Certificate</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Udemy</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -599,15 +611,19 @@ export default function RootLayout({
                     <div className="group">
                       <GlareHover className="relative" roundedClassName="rounded-2xl">
                         <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 4</span>
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/git.jpg" 
+                              alt="Python Programming Certificate" 
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
                       </GlareHover>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Python Programming</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Google</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Git Version Control</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Udemy</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -617,15 +633,19 @@ export default function RootLayout({
                     <div className="group">
                       <GlareHover className="relative" roundedClassName="rounded-2xl">
                         <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 5</span>
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/mob_figma.jpg" 
+                              alt="AWS Cloud Practitioner Certificate" 
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
                       </GlareHover>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">AWS Cloud Practitioner</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Amazon</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Mobile App Design by Figma</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Udemy</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -635,72 +655,24 @@ export default function RootLayout({
                     <div className="group">
                       <GlareHover className="relative" roundedClassName="rounded-2xl">
                         <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 6</span>
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/figma_uiux.jpg" 
+                              alt="UI/UX Design Certificate" 
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
                       </GlareHover>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">UI/UX Design</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Google</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">UI/UX Design by Figma</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Udemy</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
                       </div>
                     </div>
                   </ScrollReveal>
 
-                  {/* Certificate 7 */}
-                  <ScrollReveal delayMs={600}>
-                    <div className="group">
-                      <GlareHover className="relative" roundedClassName="rounded-2xl">
-                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 7</span>
-                          </div>
-                        </div>
-                      </GlareHover>
-                      <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Data Science</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">IBM</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
-                      </div>
-                    </div>
-                  </ScrollReveal>
 
-                  {/* Certificate 8 */}
-                  <ScrollReveal delayMs={700}>
-                    <div className="group">
-                      <GlareHover className="relative" roundedClassName="rounded-2xl">
-                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 8</span>
-                          </div>
-                        </div>
-                      </GlareHover>
-                      <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Cybersecurity</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Cisco</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2023</p>
-                      </div>
-                    </div>
-                  </ScrollReveal>
-
-                  {/* Certificate 9 */}
-                  <ScrollReveal delayMs={800}>
-                    <div className="group">
-                      <GlareHover className="relative" roundedClassName="rounded-2xl">
-                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
-                          <div className="aspect-[3/2] bg-gradient-to-br from-gray-500 to-slate-600 flex items-center justify-center">
-                            <span className="text-white text-xl font-semibold">Certificate 9</span>
-                          </div>
-                        </div>
-                      </GlareHover>
-                      <div className="mt-4 text-center">
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Machine Learning</h3>
-                        <p className="text-sm text-black/70 dark:text-white/70">Stanford</p>
-                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2024</p>
-                      </div>
-                    </div>
-                  </ScrollReveal>
                 </div>
               </section>
             </div>
