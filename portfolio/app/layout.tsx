@@ -318,9 +318,6 @@ export default function RootLayout({
                         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-800 dark:text-orange-200 mb-2">
                           The NookPay System
                         </h3>
-                        <p className="text-orange-700/80 dark:text-orange-300/80 text-sm sm:text-base">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos minima fuga, enim est et unde vitae porro provident, a necessitatibus blanditiis ratione odio? Fugit laudantium molestiae, eum iure perferendis porro!
-                        </p>
                       </div>
                       
                       {/* Project 1 - Main NookPay System */}
@@ -353,7 +350,7 @@ export default function RootLayout({
                         <div className="w-full">
                           <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Nookpay Landing Page</h3>
                           <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"><a href="https://nookpay.site" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">nookpay.site</a></p>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam molestias quas sed sit nihil saepe, illo, eum corporis beatae blanditiis atque accusantium aperiam similique praesentium ut dolorum soluta deleniti.</p>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">A modern, responsive web application built with vanilla HTML, CSS (Tailwind), and JavaScript that serves as a cross-platform download portal for the NookPay Ordering App, featuring smart device detection, interactive modal dialogs, and seamless APK downloads for Android users alongside Progressive Web App installation guides for iOS users, demonstrating expertise in frontend development and user experience design.</p>
                           <div className="flex flex-wrap items-center gap-3">
                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" className="w-6 h-6" />
                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" className="w-6 h-6" />
@@ -393,9 +390,9 @@ export default function RootLayout({
                       {/* Content left */}
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay POS System</h3>
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay POS App</h3>
                           <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"><a href="https://nookpay-pos.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">nookpay-pos.vercel.app</a></p>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Point of Sale system integrated with NookPay payment processing for seamless transactions.</p>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">A complete restaurant management system built with React Native Expo that handles orders, tracks inventory with expiration dates, manages staff, and shows sales reports with charts, all connected to the NookPay customer Ordering App for seamless restaurant operations.</p>
                           <div className="flex flex-wrap items-center gap-3">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
@@ -437,9 +434,9 @@ export default function RootLayout({
                       {/* Content right */}
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
-                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay Ordering System</h3>
+                          <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay Ordering App</h3>
                           <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"><a href="https://www.nook-pay.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">nook-pay.com</a></p>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Online ordering platform with real-time inventory management and payment integration.</p>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"> A food ordering app built with React Native Expo that lets users browse menus, add items to cart, place orders, and pay securely using PayMongo payment system, connected to the NookPay POS app for restaurant management, with features like user accounts, order tracking, vouchers, and loyalty points.</p>
                           <div className="flex flex-wrap items-center gap-3">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
@@ -484,7 +481,7 @@ export default function RootLayout({
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
                           <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Portfolio Website</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">MedQueue is a platform for booking appointments with doctors.</p>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">A portfolio website built with Next.js and TypeScript, styled with Tailwind CSS, and deployed on Vercel.</p>
                           <div className="flex flex-wrap items-center gap-3">
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
@@ -527,7 +524,7 @@ export default function RootLayout({
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
                           <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">Payroll System</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">Payroll System for BBtrix.</p>
+                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">A payroll app that tracks employee work hours, calculates pay, and sends payslips by email using Python and MongoDB as database.</p>
                           <div className="flex flex-wrap items-center gap-3">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" className="w-6 h-6" />
