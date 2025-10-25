@@ -44,7 +44,7 @@ export default function ContactForm() {
               </defs>
               <text textAnchor="middle" className="fill-current text-[8px] tracking-[2px]">
                 <textPath href="#circlePathFooter" startOffset="50%">
-                  SEND MESSAGE • LET'S TALK • SEND MESSAGE • LET'S TALK •
+                  SEND MESSAGE • LET&apos;S TALK • SEND MESSAGE • LET&apos;S TALK •
                 </textPath>
               </text>
             </svg>
