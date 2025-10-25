@@ -420,7 +420,7 @@ export default function RootLayout({
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/nookpay-ordering.png" alt="NookPay Ordering System" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/NP_Order.png" alt="NookPay Ordering System" className="w-full h-auto object-cover aspect-video" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/NookPay-Ordering-App"
@@ -489,6 +489,7 @@ export default function RootLayout({
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" className="w-6 h-6" />
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-6 h-6" />
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-6 h-6 dark:invert" />
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" className="w-6 h-6 dark:invert" />
                           </div>
@@ -508,7 +509,7 @@ export default function RootLayout({
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/payroll.png" alt="Payroll System" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/Payroll.png" alt="Payroll System" className="w-full h-auto object-cover aspect-video" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/PayRoll"
