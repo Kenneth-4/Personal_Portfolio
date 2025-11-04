@@ -391,7 +391,6 @@ export default function RootLayout({
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
                           <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay POS App</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"><a href="https://nookpay-pos.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">nookpay-pos.vercel.app</a></p>
                           <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">A complete restaurant management system built with React Native Expo that handles orders, tracks inventory with expiration dates, manages staff, and shows sales reports with charts, all connected to the NookPay customer Ordering App for seamless restaurant operations.</p>
                           <div className="flex flex-wrap items-center gap-3">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
@@ -435,7 +434,6 @@ export default function RootLayout({
                       <div className="md:w-5/12 flex items-center">
                         <div className="w-full">
                           <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-3">NookPay Ordering App</h3>
-                          <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"><a href="https://www.nook-pay.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">nook-pay.com</a></p>
                           <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4"> A food ordering app built with React Native Expo that lets users browse menus, add items to cart, place orders, and pay securely using PayMongo payment system, connected to the NookPay POS app for restaurant management, with features like user accounts, order tracking, vouchers, and loyalty points.</p>
                           <div className="flex flex-wrap items-center gap-3">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-6 h-6" />
