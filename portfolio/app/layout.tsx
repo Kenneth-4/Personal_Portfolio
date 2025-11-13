@@ -72,73 +72,79 @@ export default function RootLayout({
                 <Waves lineColor="currentColor" backgroundColor="transparent" className="" />
               </div>
               <div className="mx-auto max-w-7xl px-1 sm:px-3 lg:px-4 min-h-dvh grid place-items-center text-center">
-                <div className="space-y-4">
-                  <DecryptedText
-                    text="KENNETH CUBIAN"
-                    className="select-none font-extrabold tracking-tight leading-[0.9] text-[clamp(2.75rem,12vw,6.5rem)] text-black dark:text-white drop-shadow-[0_1px_0_rgba(0,0,0,0.04)]"
-                    speedMs={60}
-                  />
-                  <div className="mt-4 sm:mt-6 text-black/70 dark:text-white/80">
+                <div className="relative">
+                  <div className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center">
+                    <div className="h-[135%] w-[135%] rounded-full bg-white/25 dark:bg-slate-950/55 blur-3xl opacity-70" />
+                    <div className="absolute h-[160%] w-[160%] rounded-full bg-gradient-to-br from-white/10 via-transparent to-white/0 dark:from-slate-700/35 dark:via-transparent dark:to-slate-900/0 blur-2xl" />
+                  </div>
+                  <div className="space-y-4 px-6 sm:px-10 py-8 sm:py-12 drop-shadow-[0_28px_55px_rgba(15,23,42,0.25)] dark:drop-shadow-[0_32px_70px_rgba(2,6,23,0.55)]">
                     <DecryptedText
-                      text="Software Developer | Aspiring Engineer"
-                      className="block font-semibold tracking-tight text-[clamp(1.25rem,6.5vw,2.5rem)]"
-                      speedMs={70}
+                      text="KENNETH CUBIAN"
+                      className="select-none font-extrabold tracking-tight leading-[0.9] text-[clamp(2.75rem,12vw,6.5rem)] text-black dark:text-white drop-shadow-[0_6px_18px_rgba(15,23,42,0.12)] dark:drop-shadow-[0_10px_28px_rgba(2,6,23,0.45)]"
+                      speedMs={60}
                     />
-                    <DecryptedText
-                      text="Cavite, Philippines"
-                      className="block font-medium tracking-tight text-[clamp(1rem,5.5vw,2rem)]"
-                      speedMs={80}
-                    />
-                    <div className="mt-8 flex flex-col items-center justify-center gap-4">
-                      <a
-                        href="/Kenneth_Resume.pdf"
-                        download="Kenneth_Resume.pdf"
-                        className="inline-flex items-center gap-2 rounded-full bg-black text-white dark:bg-white dark:text-black px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                      >
-                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                          <polyline points="7,10 12,15 17,10"/>
-                          <line x1="12" y1="15" x2="12" y2="3"/>
-                        </svg>
-                        Download Resume
-                      </a>
-                    </div>
-                    <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
-                      <a
-                        href="https://www.linkedin.com/in/kenneth-cubian-47b799317/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn"
-                        className="hover:text-black dark:hover:text-white transition-colors"
-                      >
-                        <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                          <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM6.765 20.452H3.911V9h2.854v11.452zM5.337 7.433c-1.144 0-2.068-.926-2.068-2.068 0-1.141.924-2.066 2.068-2.066 1.141 0 2.066.925 2.066 2.066 0 1.142-.925 2.068-2.066 2.068zM20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.368-1.852 3.602 0 4.267 2.371 4.267 5.455v6.288z"/>
-                        </svg>
-                      </a>
-                      <a
-                        href="https://github.com/Kenneth-4"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub"
-                        className="hover:text-black dark:hover:text-white transition-colors"
-                      >
-                        <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                          <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.instagram.com/_ken_neth_10/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Instagram"
-                        className="hover:text-black dark:hover:text-white transition-colors"
-                      >
-                        <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                          <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
-                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                        </svg>
-                      </a>
+                    <div className="mt-4 sm:mt-6 text-black/70 dark:text-white/80">
+                      <DecryptedText
+                        text="Software Developer | Aspiring Engineer"
+                        className="block font-semibold tracking-tight text-[clamp(1.25rem,6.5vw,2.5rem)] drop-shadow-[0_4px_12px_rgba(15,23,42,0.15)] dark:drop-shadow-[0_6px_18px_rgba(2,6,23,0.45)]"
+                        speedMs={70}
+                      />
+                      <DecryptedText
+                        text="Cavite, Philippines"
+                        className="block font-medium tracking-tight text-[clamp(1rem,5.5vw,2rem)] drop-shadow-[0_3px_10px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_6px_16px_rgba(2,6,23,0.45)]"
+                        speedMs={80}
+                      />
+                      <div className="mt-8 flex flex-col items-center justify-center gap-4">
+                        <a
+                          href="/Kenneth_Resume.pdf"
+                          download="Kenneth_Resume.pdf"
+                          className="inline-flex items-center gap-2 rounded-full bg-black text-white dark:bg-white dark:text-black px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                        >
+                          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                          </svg>
+                          Download Resume
+                        </a>
+                      </div>
+                      <div className="mt-6 flex items-center justify-center gap-5 text-black/70 dark:text-white/80">
+                        <a
+                          href="https://www.linkedin.com/in/kenneth-cubian-47b799317/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="LinkedIn"
+                          className="hover:text-black dark:hover:text-white transition-colors"
+                        >
+                          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                            <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM6.765 20.452H3.911V9h2.854v11.452zM5.337 7.433c-1.144 0-2.068-.926-2.068-2.068 0-1.141.924-2.066 2.068-2.066 1.141 0 2.066.925 2.066 2.066 0 1.142-.925 2.068-2.066 2.068zM20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.368-1.852 3.602 0 4.267 2.371 4.267 5.455v6.288z"/>
+                          </svg>
+                        </a>
+                        <a
+                          href="https://github.com/Kenneth-4"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub"
+                          className="hover:text-black dark:hover:text-white transition-colors"
+                        >
+                          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.158-1.11-1.468-1.11-1.468-.908-.62.069-.607.069-.607 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.111-4.555-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.566 4.936.359.309.679.916.679 1.846 0 1.333-.012 2.407-.012 2.735 0 .268.18.579.688.48A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z" clipRule="evenodd"/>
+                          </svg>
+                        </a>
+                        <a
+                          href="https://www.instagram.com/_ken_neth_10/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Instagram"
+                          className="hover:text-black dark:hover:text-white transition-colors"
+                        >
+                          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
