@@ -330,14 +330,15 @@ export default function RootLayout({
                       <ScrollReveal delayMs={0}>
                     <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
                       {/* Image left */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-[0_35px_90px_-45px_rgba(15,23,42,0.55)] dark:hover:shadow-[0_40px_110px_-50px_rgba(2,6,23,0.75)] hover:border-black/20 dark:hover:border-white/25">
+                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/55 via-transparent to-white/0 dark:from-slate-300/10 dark:via-transparent dark:to-slate-900/40" />
                         <a
                           href="https://github.com/Kenneth-4/Nookpay_Landing_Page"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/NP_LandingPage.png" alt="Nookpay Landing Page" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/NP_LandingPage.png" alt="Nookpay Landing Page" className="w-full h-auto object-cover aspect-video transition-transform duration-500 ease-out group-hover:scale-[1.035]" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/Nookpay_Landing_Page"
@@ -372,14 +373,15 @@ export default function RootLayout({
                   <ScrollReveal delayMs={100}>
                     <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
                       {/* Image right */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-[0_35px_90px_-45px_rgba(15,23,42,0.55)] dark:hover:shadow-[0_40px_110px_-50px_rgba(2,6,23,0.75)] hover:border-black/20 dark:hover:border-white/25">
+                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/55 via-transparent to-white/0 dark:from-slate-300/10 dark:via-transparent dark:to-slate-900/40" />
                         <a
                           href="https://github.com/Kenneth-4/NookPay-POS-App"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/NP_Pos.png" alt="NookPay POS System" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/NP_Pos.png" alt="NookPay POS System" className="w-full h-auto object-cover aspect-video transition-transform duration-500 ease-out group-hover:scale-[1.035]" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/NookPay-POS-App"
@@ -415,14 +417,15 @@ export default function RootLayout({
                   <ScrollReveal delayMs={200}>
                     <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
                       {/* Image left */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-[0_35px_90px_-45px_rgba(15,23,42,0.55)] dark:hover:shadow-[0_40px_110px_-50px_rgba(2,6,23,0.75)] hover:border-black/20 dark:hover:border-white/25">
+                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/55 via-transparent to-white/0 dark:from-slate-300/10 dark:via-transparent dark:to-slate-900/40" />
                         <a
                           href="https://github.com/Kenneth-4/NookPay-Ordering-App"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/NP_Order.png" alt="NookPay Ordering System" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/NP_Order.png" alt="NookPay Ordering System" className="w-full h-auto object-cover aspect-video transition-transform duration-500 ease-out group-hover:scale-[1.035]" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/NookPay-Ordering-App"
@@ -460,14 +463,15 @@ export default function RootLayout({
                   <ScrollReveal delayMs={400}>
                     <div className="flex flex-col md:flex-row-reverse items-stretch gap-4 sm:gap-6">
                       {/* Image right */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-[0_35px_90px_-45px_rgba(15,23,42,0.55)] dark:hover:shadow-[0_40px_110px_-50px_rgba(2,6,23,0.75)] hover:border-black/20 dark:hover:border-white/25">
+                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/55 via-transparent to-white/0 dark:from-slate-300/10 dark:via-transparent dark:to-slate-900/40" />
                         <a
                           href="https://github.com/Kenneth-4/Personal_Portfolio"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/port.png" alt="Portfolio Website" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/port.png" alt="Portfolio Website" className="w-full h-auto object-cover aspect-video transition-transform duration-500 ease-out group-hover:scale-[1.035]" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/Personal_Portfolio"
@@ -503,14 +507,15 @@ export default function RootLayout({
                   <ScrollReveal delayMs={500}>
                     <div className="flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
                       {/* Image left */}
-                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                      <div className="md:w-7/12 group relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-[0_35px_90px_-45px_rgba(15,23,42,0.55)] dark:hover:shadow-[0_40px_110px_-50px_rgba(2,6,23,0.75)] hover:border-black/20 dark:hover:border-white/25">
+                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/55 via-transparent to-white/0 dark:from-slate-300/10 dark:via-transparent dark:to-slate-900/40" />
                         <a
                           href="https://github.com/Kenneth-4/PayRoll"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <img src="/projects/Payroll.png" alt="Payroll System" className="w-full h-auto object-cover aspect-video" />
+                          <img src="/projects/Payroll.png" alt="Payroll System" className="w-full h-auto object-cover aspect-video transition-transform duration-500 ease-out group-hover:scale-[1.035]" />
                         </a>
                         <a
                           href="https://github.com/Kenneth-4/PayRoll"
