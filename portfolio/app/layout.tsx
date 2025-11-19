@@ -690,6 +690,27 @@ export default function RootLayout({
                     </div>
                   </ScrollReveal>
 
+                  {/* Certificate 7 */}
+                  <ScrollReveal delayMs={500}>
+                    <div className="group">
+                      <GlareHover className="relative" roundedClassName="rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl border border-black/10 dark:border-white/15 bg-white/60 dark:bg-black/30 backdrop-blur shadow-lg">
+                          <div className="aspect-[3/2] relative">
+                            <img 
+                              src="/certificates/data_analysis.jpg" 
+                              alt="UI/UX Design Certificate" 
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      </GlareHover>
+                      <div className="mt-4 text-center">
+                        <h3 className="text-lg font-bold text-black dark:text-white mb-1">Excel for Data Analysis</h3>
+                        <p className="text-sm text-black/70 dark:text-white/70">Udemy</p>
+                        <p className="text-xs text-black/50 dark:text-white/50 mt-1">2025</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
 
                 </div>
               </section>
