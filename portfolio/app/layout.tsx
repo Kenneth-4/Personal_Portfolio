@@ -248,11 +248,6 @@ export default function RootLayout({
                               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12" />
                               <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">Java</span>
                             </div>
-                            {/* PHP */}
-                            <div className="flex flex-col items-center gap-3 group">
-                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-12 h-12" />
-                              <span className="text-sm font-semibold text-white/90 dark:text-black/90 text-center">PHP</span>
-                            </div>
                         </div>
                       </ProfileCard>
                     </TiltedCard>
@@ -536,7 +531,6 @@ export default function RootLayout({
                           <p className="text-sm md:text-base text-black/70 dark:text-white/70 mb-4">A payroll app that tracks employee work hours, calculates pay, and sends payslips by email using Python and MongoDB as database.</p>
                           <div className="flex flex-wrap items-center gap-3">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" className="w-6 h-6" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-6 h-6" />
                           </div>
                         </div>
