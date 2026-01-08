@@ -14,7 +14,14 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
-    const formData = new FormData(e.currentTarget);
+    // Store form reference early to avoid null reference issues
+    const form = e.currentTarget;
+    if (!form) {
+      setIsSubmitting(false);
+      return;
+    }
+
+    const formData = new FormData(form);
     const data = {
       name: formData.get("name") as string,
       email: formData.get("email") as string,
@@ -30,7 +37,27 @@ export default function ContactForm() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      // Parse JSON response safely
+      let result;
+      try {
+        const text = await response.text();
+        result = text ? JSON.parse(text) : {};
+      } catch (parseError) {
+        console.error("Error parsing response:", parseError);
+        // If parsing fails but response is ok, assume success
+        if (response.ok) {
+          setSubmitStatus({
+            type: "success",
+            message: "Message sent successfully! I'll get back to you soon.",
+          });
+          if (form) {
+            form.reset();
+          }
+          setIsSubmitting(false);
+          return;
+        }
+        result = {};
+      }
 
       if (response.ok) {
         setSubmitStatus({
@@ -38,7 +65,9 @@ export default function ContactForm() {
           message: "Message sent successfully! I'll get back to you soon.",
         });
         // Reset form
-        e.currentTarget.reset();
+        if (form) {
+          form.reset();
+        }
       } else {
         setSubmitStatus({
           type: "error",
@@ -46,6 +75,7 @@ export default function ContactForm() {
         });
       }
     } catch (error) {
+      console.error("Error submitting form:", error);
       setSubmitStatus({
         type: "error",
         message: "An error occurred. Please try again later.",

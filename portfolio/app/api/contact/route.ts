@@ -87,6 +87,7 @@ ${message}
       );
     }
 
+    // Success - return proper JSON response
     return NextResponse.json(
       { message: 'Email sent successfully', id: data?.id },
       { status: 200 }
